@@ -33,7 +33,9 @@ ActiveRecord::Schema.define(version: 2022_06_02_094536) do
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
-    t.string "ov"
+    t.text "overview"
+    t.decimal "rating"
+    t.string "poster_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
